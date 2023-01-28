@@ -1,15 +1,16 @@
-import java.util.Scanner;
+import java.math.BigDecimal;
 public class ReajusteSalarial {
     public static void main (String [] args ) {
-        Scanner entrada =new Scanner (System.in);
-        double aumento=1.5, salario = 1000, ano= 2022;
-        do {
-            aumento=aumento*2;
-            salario=salario + (salario * aumento/100);
-            ano++;
+        //Scanner entrada =new Scanner (System.in);
+        double aumento=1.5, salario = 1000, ano= 2015;
+        System.out.println("O valor do Salário atualizado é de: " + salario);
 
-        } while(ano<=2022);
-        System.out.println(salario);
+                for (ano =2015; ano <=2023; ano++){
+            salario = (salario * aumento) / 100;
+        }
+
+        System.out.println("O valor do Salário atualizado é de: " + salario);
+
     }
 
 }

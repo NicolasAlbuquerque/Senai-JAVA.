@@ -11,10 +11,10 @@ public class Lista {
                     System.out.println("Verde");
                 }
 
-              //  else  (index ==2) {
-            //      System.out.println("Roxo");
+                if  (index ==2) {
+                System.out.println("Roxo");
 
-              //  }
+               }
                 index +=1;
 
             }
